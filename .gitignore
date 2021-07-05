@@ -1,23 +1,61 @@
-# Compiled class file
-*.class
+package com.company;
 
-# Log file
-*.log
+public class Main {
 
-# BlueJ files
-*.ctxt
+    public static void main(String[] args) {
+        String nameOfMe;
+        short ageOfMe;
+        boolean isAwake;
+        int netWorth;
+        double averageWorthPerYear;
+        float heightOfMe;
+        char currencyOfNetWorth;
+        byte gradeOfSuccess;
+        String MePower1, MePower2, MePower3;
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+        nameOfMe = "Liene P";
+        ageOfMe = 36;
+        heightOfMe = 1.70F;
+        isAwake = true;
+        netWorth = 90000;
+        averageWorthPerYear = (double)netWorth / ageOfMe;
+        currencyOfNetWorth = 'J';
+        gradeOfSuccess = 100;
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+        MePower1 = "Isn't familiar with Java programming yet, ready to put all effort to learn!";
+        MePower2 = "Sometimes awake! :) ";
+        MePower3 = "Detects syntax errors in all programming languages starting with letter \"J\".";
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+        System.out.println("************************************************************");
+        System.out.println();
+        System.out.println("Hero name: ");
+        System.out.println(nameOfMe);
+        System.out.print("Hero age: ");
+        System.out.println(ageOfMe);
+        System.out.println("Hero height: ");
+        System.out.println(heightOfMe);
+
+        System.out.println("------------");
+        System.out.println();
+        System.out.println("Hero powers:");
+        System.out.println(MePower1);
+        System.out.println(MePower2);
+        System.out.println(MePower3);
+
+        System.out.println("------------");
+        System.out.println();
+        System.out.println("Net worth of nameOfHero " + nameOfMe + ": ");
+        System.out.println(netWorth + "(" + currencyOfNetWorth + ")");
+
+        System.out.println("------------");
+
+        System.out.print("Is always awake? - ");
+        System.out.println(isAwake);
+        System.out.print("Grade of success (1 - 100): ");
+        System.out.println(gradeOfSuccess);
+        System.out.println("\n");
+        System.out.println("************************************************************");
+    // write your code here
+    }
+}
+
